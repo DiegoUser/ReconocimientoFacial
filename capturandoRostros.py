@@ -1,3 +1,6 @@
+# Este modulo pasa a estar en el archivo principal (Login)
+
+
 import cv2
 import os
 import imutils
@@ -39,7 +42,7 @@ while True:
     cv2.imshow('Capturando Rostro', frame)
 
     k = cv2.waitKey(1)
-    if k == 27 or count >= 500:
+    if k == 27 or count >= 250:
         break
 
 cap.release()
