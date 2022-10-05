@@ -2,7 +2,7 @@ import cv2
 import os
 
 # Cambia a la ruta donde hayas almacenado Data
-dataPath = 'C:/Users/diego.mendez/Desktop/Python/Data'
+dataPath = 'C:/Users/diego.mendez/Desktop/ReconocimientoFacial/Data'
 imagePaths = os.listdir(dataPath)
 print('imagePaths=', imagePaths)
 

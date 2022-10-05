@@ -3,7 +3,7 @@ import os
 import numpy as np
 
 # Cambia a la ruta donde hayas almacenado Data
-dataPath = 'C:/Users/diego.mendez/Desktop/Python/Data'
+dataPath = 'C:/Users/diego.mendez/Desktop/ReconocimientoFacial/Data'
 peopleList = os.listdir(dataPath)
 print('Lista de personas: ', peopleList)
 
