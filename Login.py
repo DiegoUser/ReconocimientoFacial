@@ -95,8 +95,8 @@ btnEntrenar = ttk.Button(ventana, text="Entrenar", width=20,
                          command=Entrenar)
 btnRun = ttk.Button(ventana, text="Reconocer", width=20,
                     command=Run)
-
-label = Label(ventana, text="Inicio", font=("Courier 22 bold"))
+# Labels
+label = Label(ventana, text="Inicio", font=("Courier 22 italic"), bg="#FFD700")
 label_canvas = canvas1.create_window(300, 30, anchor="center", window=label)
 
 # Create an Entry widget to accept User Input
