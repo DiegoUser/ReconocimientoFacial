@@ -76,12 +76,12 @@ def Capturar():
 # Crear Ventana
 ventana = tkinter.Tk()
 # Dimensionar Ventana
-ventana.geometry("600x600")
+ventana.geometry("400x400")
 # Imagen de fondo
 bg = PhotoImage(file="bkgr.png")
 # Crear Canvas
-canvas1 = Canvas(ventana, width=600,
-                 height=600)
+canvas1 = Canvas(ventana, width=400,
+                 height=400)
 # Asociar la imagen de fondo al Canvas
 canvas1.create_image(0, 0, image=bg,
                      anchor="nw")
@@ -97,23 +97,23 @@ btnRun = ttk.Button(ventana, text="Reconocer", width=20,
                     command=Run)
 # Labels
 label = Label(ventana, text="Inicio", font=("Courier 22 italic"), bg="#FFD700")
-label_canvas = canvas1.create_window(300, 30, anchor="center", window=label)
+label_canvas = canvas1.create_window(200, 30, anchor="center", window=label)
 
 # Create an Entry widget to accept User Input
 entry = Entry(ventana, width=30, justify='center')
 entry.focus_set()
-entry_canvas = canvas1.create_window(200, 70, anchor='nw', window=entry)
+entry_canvas = canvas1.create_window(100, 70, anchor='nw', window=entry)
 
-button1_canvas = canvas1.create_window(230, 100,
+button1_canvas = canvas1.create_window(130, 100,
                                        anchor="nw",
                                        window=btnRegis)
-button1_canvas = canvas1.create_window(230, 130,
+button1_canvas = canvas1.create_window(130, 130,
                                        anchor="nw",
                                        window=btnCapt)
-button1_canvas = canvas1.create_window(230, 160,
+button1_canvas = canvas1.create_window(130, 160,
                                        anchor="nw",
                                        window=btnEntrenar)
-button1_canvas = canvas1.create_window(230, 190,
+button1_canvas = canvas1.create_window(130, 190,
                                        anchor="nw",
                                        window=btnRun)
 
